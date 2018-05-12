@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.BEM.SCM.Service.Plugin", "Kingdee.K3.BEM.SCM.Service.Plugin.csproj", "{EEA8B372-0EE3-4F35-8413-BA07504AE1BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client", "Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client.csproj", "{87381454-6A5F-4FE6-8127-4A07102783EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEA8B372-0EE3-4F35-8413-BA07504AE1BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEA8B372-0EE3-4F35-8413-BA07504AE1BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEA8B372-0EE3-4F35-8413-BA07504AE1BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEA8B372-0EE3-4F35-8413-BA07504AE1BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87381454-6A5F-4FE6-8127-4A07102783EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87381454-6A5F-4FE6-8127-4A07102783EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87381454-6A5F-4FE6-8127-4A07102783EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87381454-6A5F-4FE6-8127-4A07102783EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

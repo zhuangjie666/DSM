@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.K3.BEM.SCM.Service.Plugin.dll
+C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.K3.BEM.SCM.Service.Plugin.pdb
+E:\DSM\obj\Debug\Kingdee.K3.BEM.SCM.Service.Plugin.dll
+E:\DSM\obj\Debug\Kingdee.K3.BEM.SCM.Service.Plugin.pdb

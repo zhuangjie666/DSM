@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A39EFEAC-E889-4B1D-A5ED-62D24A87A99A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>DSMproject</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Kingdee.BOS, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.App.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.App.Core, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.App.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Contracts, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Core, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.DataEntity, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.DataEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.OrmEngine, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.OrmEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.ServiceHelper, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.SQL, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.SQL.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.BOS.Web.Core, Version=6.0.413.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.BOS.Web.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.BD.Contracts, Version=6.0.411.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.K3.BD.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.BD.ServiceHelper, Version=6.0.411.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.K3.BD.ServiceHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingdee.K3.BEM.SCM.Service.Plugin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Kingdee\K3Cloud\WebSite\Bin\Kingdee.K3.BEM.SCM.Service.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Antlr3.Runtime.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\BarcodeLib.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\BouncyCastle.Crypto.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.Data.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.Office.v13.1.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.Printing.v13.1.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.RichEdit.v13.1.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.Utils.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.XtraEditors.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.XtraPrinting.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\DevExpress.XtraPrinting.v13.1.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.CalcEngine.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.Excel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.Localization.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.PDF.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.PluginCalendar.WinForms.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.Win.Chart.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.Win.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\FarPoint.Win.Spread.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\IronPython.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.App.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.App.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.BusinessEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Cabinet.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.DataEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.ExcelToolHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.IK3Cloud.ServiceFacade.Contract.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.IK3Cloud.ServiceFacade.KDServiceClient.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Install.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.KDSReportCommon.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.KDSReportEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.LianJie100.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.MC.ServiceFacade.KDServiceClient.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.MC.ServiceFacade.KDServiceEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Mobile.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.MpWeiXin.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.NotePrinting.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.OrmEngine.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Package.ProductModel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Performance.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.ProductModel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.QyWeiXin.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Security.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.ServiceFacade.Common.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.ServiceFacade.KDServiceClient.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.ServiceFacade.KDServiceClientFx.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.ServiceFacade.KDServiceEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.SQL.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Verification.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.VerificationHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.VerificationService.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Web.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Web.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.WeiXin.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Workflow.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Workflow.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Workflow.Kernel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Workflow.Models.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.BOS.Workflow.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.K3.BD.Common.BusinessEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.K3.BD.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.K3.BD.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.K3.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Kingdee.Xuntong.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\log4net.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\log4net2.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Dynamic.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Practices.EnterpriseLibrary.Common.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Practices.ServiceLocation.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Scripting.Debugging.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Microsoft.Scripting.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Mono.Security.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\MySql.Data.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Newtonsoft.Json.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Newtonsoft.Json.Net20.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Newtonsoft.Json.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Npgsql.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Oracle.DataAccess.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\QuickGraph.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\ThoughtWorks.QRCode.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client.csproj.FileListAbsolute.txt" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Antlr3.Runtime.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\BarcodeLib.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\BouncyCastle.Crypto.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.Data.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.Office.v13.1.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.Printing.v13.1.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.RichEdit.v13.1.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.Utils.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.XtraEditors.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.XtraPrinting.v13.1.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\DevExpress.XtraPrinting.v13.1.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.CalcEngine.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.Excel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.Localization.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.PDF.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.PluginCalendar.WinForms.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.Win.Chart.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.Win.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\FarPoint.Win.Spread.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\IronPython.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.App.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.App.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Business.Bill.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Business.DynamicForm.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Business.PlugIn.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.BusinessEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Cabinet.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.DataEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ExcelToolHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.IK3Cloud.ServiceFacade.Contract.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.IK3Cloud.ServiceFacade.KDServiceClient.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Install.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.KDSReportCommon.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.KDSReportEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.LianJie100.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.MC.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.MC.ServiceFacade.KDServiceClient.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.MC.ServiceFacade.KDServiceEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.MC.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Mobile.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Model.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.MpWeiXin.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.NotePrinting.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.OrmEngine.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Package.ProductModel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Performance.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ProductModel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.QyWeiXin.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Security.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ServiceFacade.Common.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ServiceFacade.KDServiceClient.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ServiceFacade.KDServiceClientFx.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ServiceFacade.KDServiceEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ServiceInterface.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.ServiceInterface.Model.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.SQL.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Verification.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.VerificationHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.VerificationService.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Web.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Web.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.WeiXin.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Workflow.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Workflow.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Workflow.Kernel.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Workflow.Models.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.BOS.Workflow.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.BD.Common.BusinessEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.BD.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.BD.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.BEM.SCM.Service.Plugin.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.BEM.SCM.Service.Plugin.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.Business.PlugIn.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.CR.Business.PlugIn.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.CR.Common.BusinessEntity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.CR.Common.Core.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.CR.Contracts.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.CR.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.K3.FIN.ServiceHelper.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.XT.Open.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Kingdee.Xuntong.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\log4net.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\log4net2.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Dynamic.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Practices.ServiceLocation.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Practices.Unity.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Scripting.Debugging.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Microsoft.Scripting.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Mono.Security.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\MySql.Data.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Newtonsoft.Json.Net20.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Newtonsoft.Json.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Npgsql.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\Oracle.DataAccess.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\QuickGraph.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Common.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Common.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Common.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Interfaces.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Interfaces.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Interfaces.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.OrmLite.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.OrmLite.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.ServiceInterface.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.ServiceInterface.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Text.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Text.pdb" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ServiceStack.Text.xml" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Debug\ThoughtWorks.QRCode.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\Kingdee.K3.BEM.SCM.Service.Plugin.csproj" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\Kingdee.K3.BEM.SCM.Service.Plugin.csproj.FileListAbsolute.txt" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\Kingdee.K3.BEM.SCM.Service.Plugin.dll" />
+    <Content Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\Kingdee.K3.BEM.SCM.Service.Plugin.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bill\FlotResolution.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bill\LOTProOutNew.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bill\ProcessWorkPlugIn.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bill\QAUpdateDPlugIn.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bill\SpecificationEdit.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\list\QANoupdatedPlug.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\list\UpdateQanoValue.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\pordm\DFTMaterialQualityForSourceMaterial.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\pordm\DTFMaterialQualityForContract.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\pordm\PRODMaterialQualityForContract.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\pordm\Prod_downPull.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\prodplan\DriverStatusChange.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\Properties\AssemblyInfo.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\utils\SpecificationUtil.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\BatchMainFileFlotSplitPulgin.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\Bem_QanoArgs.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\BizQanoService.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\prodServer\updateContractStatusForPROD.cs" />
+    <Compile Include="Kingdee.K3.BEM.SCM.Service.Plugin\Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client.csprojResolveAssemblyReference.cache" />
+    <None Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Debug\" />
+    <Folder Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\bin\Release\" />
+    <Folder Include="Kingdee.K3.BEM.SCM.Bussiness.PlugIn.client\obj\Debug\TempPE\" />
+    <Folder Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\obj\Debug\TempPE\" />
+    <Folder Include="Kingdee.K3.BEM.SCM.Service.Plugin\bin\Release\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
